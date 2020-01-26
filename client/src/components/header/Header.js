@@ -73,7 +73,11 @@ export default function Header() {
                     Email:
                   </label>
                   <div className="input-group">
-                    <div className="input-group-addon mr-2"><EmailIcon /></div>
+                    <div className="input-group-prepend">
+                      <span className="input-group-text">
+                        <EmailIcon />
+                      </span>
+                      </div>
                     <input placeholder="Your email" type="email" id="email" className="form-control validate" />
                   </div>
                 </div>
@@ -82,7 +86,11 @@ export default function Header() {
                     Password:
                   </label>
                   <div className="input-group">
-                    <div className="input-group-addon mr-2"><LockIcon /></div>
+                    <div className="input-group-prepend">
+                      <span className="input-group-text">
+                        <LockIcon />
+                      </span>
+                      </div>
                     <input placeholder="Your password" type="password" id="password" className="form-control validate" />
                   </div>
                 </div>

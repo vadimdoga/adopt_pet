@@ -3,13 +3,13 @@ $pink-color: #F4A896;
 $gray-color: #f9f9f9;
 
 .footer{
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  margin-top: 30px;
+  border-top: 15px solid $pink-color;
   &__textContainer{
     display: flex;
     justify-content: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
     border-right: 15px solid $blue-color;
     border-left: 15px solid $blue-color;
     p{
@@ -32,8 +32,8 @@ $gray-color: #f9f9f9;
     display: flex;
     background-color: $pink-color;
     a{
-      border: 2px solid pink;
-      border-radius: 25px;
+      border: 3px solid $blue-color;
+      border-radius: 15px;
       margin: 0 10%;
     }
     a:hover{

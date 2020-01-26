@@ -1,8 +1,6 @@
 .footer {
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 100%;
+  margin-top: 30px;
+  border-top: 15px solid #F4A896;
 }
 
 .footer__textContainer {
@@ -12,6 +10,8 @@
   -webkit-box-pack: center;
       -ms-flex-pack: center;
           justify-content: center;
+  padding-top: 10px;
+  padding-bottom: 10px;
   border-right: 15px solid #358597;
   border-left: 15px solid #358597;
 }
@@ -43,8 +43,8 @@
 }
 
 .footer__iconContainer a {
-  border: 2px solid pink;
-  border-radius: 25px;
+  border: 3px solid #358597;
+  border-radius: 15px;
   margin: 0 10%;
 }
 
