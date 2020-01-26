@@ -10,17 +10,31 @@ export default class Footer extends Component {
     return (
       <footer id="footer" className="py-4 bg-light text-dark-50">
         <div className="container footer__textContainer">
-          <h3>Lorem Ipsum</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          <div className="footer__textContainer__description">
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.</p>
+          </div>
+          <div className="footer__textContainer__contacts">
+            <h4>Contacts</h4>
+            <p className="font-weight-bold">Address:</p>
+            <p>798 South Park Avenue, Jaipur, Raj</p>
+            <p className="font-weight-bold">Email:</p>
+            <p>adoptpet@gmail.com</p>
+            <p className="font-weight-bold">Phones:</p>
+            <p>+1-202-555-0117</p>
+          </div>
+          <div className="footer__textContainer__links">
+            <h4>Links</h4>
+            <a href="/">Find Pet</a>
+          </div>
         </div>
         <div className="container text-right footer__iconContainer">
-          <a href="https://www.facebook.com/"><FacebookIcon color="secondary" fontSize="large" /></a>
-          <a href="https://www.instagram.com/"><InstagramIcon color="secondary" fontSize="large" /></a>
-          <a href="https://www.pinterest.com/"><PinterestIcon color="secondary" fontSize="large" /></a>
-          <a href="https://www.twitter.com/"><TwitterIcon color="secondary" fontSize="large" /></a>
+          <a href="https://www.facebook.com/"><FacebookIcon  style={{ color: "green[500]" }} fontSize="large" /></a>
+          <a href="https://www.instagram.com/"><InstagramIcon  style={{ color: "green[500]" }} fontSize="large" /></a>
+          <a href="https://www.pinterest.com/"><PinterestIcon  style={{ color: "green[500]" }} fontSize="large" /></a>
+          <a href="https://www.twitter.com/"><TwitterIcon  style={{ color: "green[500]" }} fontSize="large" /></a>
         </div>
         <div className="container text-center" id="copyright">
-          <small>Copyright &copy; Your Website</small>
+          <small>Copyright &copy; 2020 Adopt Pet. All Rights Reserved.</small>
         </div>
       </footer>
     )

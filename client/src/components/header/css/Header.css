@@ -1,1 +1,15 @@
-/* No CSS *//*# sourceMappingURL=Header.css.map */
+.modal-footer {
+  display: block;
+  margin: auto auto;
+}
+
+.modal-footer button {
+  display: block;
+  margin: auto auto;
+  margin-bottom: 10px;
+}
+
+.modal-footer hr {
+  background-color: lightgray;
+}
+/*# sourceMappingURL=Header.css.map */

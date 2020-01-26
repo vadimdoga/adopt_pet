@@ -1,4 +1,5 @@
 import React from "react"
+import './css/Header.css'
 import pet_logo from "../../assets/pet_logo.png"
 import PersonIcon from "@material-ui/icons/Person"
 import EmailIcon from '@material-ui/icons/Email';
@@ -66,7 +67,7 @@ export default function Header() {
                   <span aria-hidden="true">&times;</span>
                 </button>
               </div>
-              <div className="modal-body mx-3">
+              <form onSubmit={handleSubmit} className="modal-body mx-3">
                 <div className="md-form mb-5 form-group">
                   <label class="control-label font-weight-bold" for="email">
                     Email:
@@ -86,10 +87,12 @@ export default function Header() {
                   </div>
                 </div>
                 <div className="modal-footer">
-                  <button onSubmit={handleSubmit} type="submit" className="btn btn-light">Login</button>
-                  <p>Do you have an account? <a href="/"> SignUp</a></p>
+                  <button type="submit" className="btn btn-light">Login</button>
+                  <hr />
+                  <p>Do you have an account? <a href="/users/register"> Sign Up</a></p>
+                  <p>Forgot password? <a href="/users/recover"> Recover</a></p>
                 </div>
-              </div>
+              </form>
             </div>
           </div>
       </div>
