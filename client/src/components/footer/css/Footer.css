@@ -1,0 +1,17 @@
+.footer {
+  margin-bottom: 0;
+}
+
+.footer__textContainer {
+  border-right: 15px solid #358597;
+  border-left: 15px solid #358597;
+}
+
+.footer__textContainer p {
+  margin-bottom: 0;
+}
+
+.footer__iconContainer {
+  background-color: #F4A896;
+}
+/*# sourceMappingURL=Footer.css.map */
