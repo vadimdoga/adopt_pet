@@ -1,13 +1,13 @@
 import React from 'react'
-import './css/General.css'
-import Pet from './PetIcon/Pet'
+import './css/Main.css'
+import Pet from '../Pet/PetIcon/Pet'
 
-export default function General() {
+export default function Main() {
   return (
-    <div className="general">
+    <div className="main">
       <h2>Featured Pets</h2>
-      <div className="general--align">
-        <div className="general__petGrid">
+      <div className="main--align">
+        <div className="main__petGrid">
           <Pet gender="M" color="beige" age="2" name="Charlie" imgSrc="https://icatcare.org/app/uploads/2019/09/The-Kitten-Checklist-1.png" />
           <Pet gender="M" color="beige" age="2" name="Charlie" imgSrc="https://icatcare.org/app/uploads/2019/09/The-Kitten-Checklist-1.png" />
           <Pet gender="M" color="beige" age="2" name="Charlie" imgSrc="https://icatcare.org/app/uploads/2019/09/The-Kitten-Checklist-1.png" />
@@ -16,7 +16,7 @@ export default function General() {
           <Pet gender="M" color="beige" age="2" name="Charlie" imgSrc="https://icatcare.org/app/uploads/2019/09/The-Kitten-Checklist-1.png" />
         </div>
 
-        <div className="general__donate">
+        <div className="main__donate">
           <h3>Donate for Pets</h3>
           <hr />
           <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.  </p>

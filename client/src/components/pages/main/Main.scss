@@ -1,4 +1,6 @@
-.general{
+$blue-color: #358597;
+
+.main{
   h2{
     text-align: center;
     margin: 15px 0;
@@ -27,7 +29,7 @@
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
-    border: 2px solid black;
+    border-right: 2px solid $blue-color;
     width: 78%;
     margin-left: 2%;
   }
