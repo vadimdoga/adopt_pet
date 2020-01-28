@@ -12,7 +12,6 @@ export default function PetPage() {
       <div className="petPage__container">
         <div className="petPage__container__img">
           <h3>My name is Tyson!</h3>
-          <hr />
           <img src="https://pet-uploads.adoptapet.com/1/f/0/352561195.jpg" id="expandedImg" alt="expandedImg" />
         </div>
         <div className="petPage__container__el">
