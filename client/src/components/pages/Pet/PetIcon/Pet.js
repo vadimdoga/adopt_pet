@@ -33,13 +33,19 @@ export default class Pet extends Component {
         gender.innerHTML = `<span class="pet--bold">Gender: </span>`
         propsText = document.createTextNode(this.props.gender)
         gender.appendChild(propsText)
+        //create goto element
+        const goto = document.createElement("a")
+        goto.href = "/pets"
+        goto.innerHTML = `<span class="pet--bold">More...</span>`
 
         div.appendChild(age)
         div.appendChild(color)
         div.appendChild(gender)
+        div.appendChild(goto)
   
       } else {
         img.style.height = "90%"
+        div.children[5].remove()
         div.children[4].remove()
         div.children[3].remove()
         div.children[2].remove()
