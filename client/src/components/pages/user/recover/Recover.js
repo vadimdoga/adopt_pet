@@ -28,6 +28,16 @@ export default function Recover() {
             onChange={e => setEmailValue(e.target.value)}
           />
         </div>
+        <div class="form-group">
+          <select value={question} onChange={e => setQuestionValue(e.target.value)} class="form-control multiple" id="form-question">
+            <option selected>Select a question</option>
+            <option value="Who is your hero?">Who is your hero?</option>
+            <option value="What is your favorite book to read?">What is your favorite book to read?</option>
+            <option value="What is the name of your favorite childhood friend?">What is the name of your favorite childhood friend?</option>
+            <option value="In what city or town was your first job?">In what city or town was your first job?</option>
+            <option value="In what city or town did your mother and father meet?">In what city or town did your mother and father meet?</option>
+          </select>
+        </div>
         <div class="form-group input-group" id="form-name">
           <div class="input-group-prepend">
             <span class="input-group-text">
