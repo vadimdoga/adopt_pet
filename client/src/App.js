@@ -6,6 +6,7 @@ import General from './components/pages/main/Main'
 import Register from './components/pages/user/register/Register'
 import Recover from './components/pages/user/recover/Recover'
 import PetDetails from './components/pages/Pet/PetDetails/PetDetails'
+import How from './components/pages/how-it-works/How'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 function App() {
   return (
@@ -18,6 +19,12 @@ function App() {
           </Route>
           <Route path="/users/recover">
             <Recover />
+          </Route>
+          <Route path="/blog/how-it-works">
+            <How />
+          </Route>
+          <Route path="/blog/adoption">
+
           </Route>
           <Route path="/pets">
             <PetDetails />
