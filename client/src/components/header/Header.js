@@ -32,10 +32,24 @@ export default function Header() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarToggler">
-          <ul className="navbar-nav mr-auto">
-            <li className="nav-item ml-4">
-              <a className="nav-link" href="/">
+          <ul className="navbar-nav ml-5">
+            <li className="nav-item">
+              <a className="nav-link" href="/pets/find">
                 Find Pet
+              </a>
+            </li>
+          </ul>
+          <ul className="navbar-nav ml-4">
+            <li className="nav-item">
+              <a className="nav-link" href="/blog/how-it-works">
+                How It Works?
+              </a>
+            </li>
+          </ul>
+          <ul className="navbar-nav ml-4">
+            <li className="nav-item">
+              <a className="nav-link" href="/blog/adoption">
+                Adoption Info
               </a>
             </li>
           </ul>

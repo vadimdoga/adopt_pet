@@ -5,7 +5,7 @@ import Footer from './components/footer/Footer'
 import General from './components/pages/main/Main'
 import Register from './components/pages/user/register/Register'
 import Recover from './components/pages/user/recover/Recover'
-import PetPage from './components/pages/Pet/PetPage/PetPage'
+import PetDetails from './components/pages/Pet/PetDetails/PetDetails'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 function App() {
   return (
@@ -20,7 +20,7 @@ function App() {
             <Recover />
           </Route>
           <Route path="/pets">
-            <PetPage />
+            <PetDetails />
           </Route>
           <Route path="/">
             <General />

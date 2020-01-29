@@ -1,20 +1,20 @@
 import React from "react"
-import "./css/PetPage.css"
+import "./css/PetDetails.css"
 
-export default function PetPage() {
+export default function PetDetails() {
   const handleImg = e => {
     const imgSrc = e.target.src
     const imgExp = document.querySelector("#expandedImg")
     imgExp.src = imgSrc
   }
   return (
-    <div className="petPage">
-      <div className="petPage__container">
-        <div className="petPage__container__img">
+    <div className="petDetails">
+      <div className="petDetails__container">
+        <div className="petDetails__container__img">
           <h3>My name is Tyson!</h3>
           <img src="https://pet-uploads.adoptapet.com/1/f/0/352561195.jpg" id="expandedImg" alt="expandedImg" />
         </div>
-        <div className="petPage__container__el">
+        <div className="petDetails__container__el">
           <img
             onClick={handleImg}
             src="https://pet-uploads.adoptapet.com/1/f/0/352561195.jpg"
@@ -41,7 +41,7 @@ export default function PetPage() {
           />
         </div>
       </div>
-      <div className="petPage__facts">
+      <div className="petDetails__facts">
         <h4>Facts About Me:</h4>
         <hr />
         <p><span className="font-weight-bold">Breed: </span> asdasd</p>
@@ -50,13 +50,15 @@ export default function PetPage() {
         <p><span className="font-weight-bold">Sex: </span> asdfasdfa</p>
         <p><span className="font-weight-bold">Hair: </span> afasdfs</p>
       </div>
-      <div className="petPage__info">
+      <div className="petDetails__info">
         <h4>My Info:</h4>
+        <hr />
+        <p><span className="font-weight-bold">Phone number:</span>+37512388</p>
         <hr />
         <p className="font-weight-bold">Good things</p>
         <p className="font-weight-bold">Bad things</p>
       </div>
-      <div className="petPage__story">
+      <div className="petDetails__story">
         <h4>My Story:</h4>
         <hr />
         <p>
