@@ -1,5 +1,4 @@
 import React from "react"
-import catImg from "../../../../assets/cat-adoption.jpeg"
 import catImg1 from "../../../../assets/cat-adopt.jpg"
 import LinkComp from "../LinkComponent/LinkC"
 import FormatQuoteIcon from '@material-ui/icons/FormatQuote';
