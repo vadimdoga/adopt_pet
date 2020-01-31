@@ -11,7 +11,7 @@ export default function Header() {
   }
   return (
     <header>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
+      <nav className="navbar navbar-expand-lg bg-light navbar-light">
         <a className="navbar-brand h1" href="/">
           <img
             src={pet_logo}

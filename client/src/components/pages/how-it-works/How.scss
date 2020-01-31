@@ -1,28 +1,71 @@
 $blue-color: #358597;
-$pink-color: #F4A896;
+$pink-color: #f4a896;
+$red-color: #F96167;
+$yellow-color: #FCE77D;
+$dark-gray-color: #262223;
 
-.How{
-  img{
+.How {
+  img {
     width: 100%;
   }
-  h1{
-    text-align: center;
-    margin-bottom: 25px;
-    color: $blue-color;
-  }
-  &__container{
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-around;
-    &__el{
-      width: 40%;
-      border: 1.5px solid $blue-color;
-      border-radius: 15px;
-      padding: 10px 10px;
-      margin: 15px 15px;
-      h3{
-        color: $pink-color;
+  &--border {
+    transition: 1s;
+
+    width: 90%;
+    margin: auto auto;
+    background-color: $red-color;
+    box-shadow: 4px 3px $dark-gray-color;
+    h1 {
+      text-align: center;
+      padding-bottom: 10px;
+      margin: auto;
+      margin-bottom: 25px;
+      color: $yellow-color;
+      font-weight: bold;
+      width: 30%;
+      border-bottom: 2px solid $yellow-color;
+    }
+    &__container {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-around;
+      &__el {
+        width: 40%;
+        background-color: white;
+        box-shadow: 3px 3px lightgray;
+        margin: 15px 15px;
+        h3 {
+          padding-bottom: 15px;
+          text-align: center;
+          background-color: $yellow-color;
+          color: $dark-gray-color;
+        }
+        p{
+          padding: 10px 10px;
+
+        }
       }
     }
+  }
+  &--border:hover{
+    background-color: $yellow-color;
+    box-shadow: 4px 3px lightgray;
+    transition: 1s;
+  }
+  &--border:hover h1{
+    border-bottom: 2px solid $red-color;
+    color: $red-color;
+    transition: 1s;
+
+  }
+  &--border:hover .How--border__container__el{
+    box-shadow: 3px 3px $dark-gray-color;
+    transition: 1s;
+
+  }
+  &--border:hover .How--border__container__el h3{
+    background-color: $red-color;
+    transition: 1s;
+
   }
 }
