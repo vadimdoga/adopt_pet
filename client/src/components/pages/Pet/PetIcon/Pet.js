@@ -38,10 +38,13 @@ export default class Pet extends Component {
         goto.href = "/pets"
         goto.innerHTML = `<span class="pet--bold">More...</span>`
 
-        div.appendChild(age)
-        div.appendChild(color)
-        div.appendChild(gender)
-        div.appendChild(goto)
+        
+        setTimeout(() => {
+          div.appendChild(age)
+          div.appendChild(color)
+          div.appendChild(gender)
+          div.appendChild(goto)
+        }, 150);
   
       } else {
         img.style.height = "90%"
