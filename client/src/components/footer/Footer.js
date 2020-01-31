@@ -32,16 +32,16 @@ export default class Footer extends Component {
         </div>
         <div className="container text-right footer__iconContainer">
           <a href="https://www.facebook.com/">
-            <FacebookIcon style={{ color: "green[500]" }} fontSize="large" />
+            <FacebookIcon className="footer__iconContainer__icon" fontSize="large" />
           </a>
           <a href="https://www.instagram.com/">
-            <InstagramIcon style={{ color: "green[500]" }} fontSize="large" />
+            <InstagramIcon className="footer__iconContainer__icon" fontSize="large" />
           </a>
           <a href="https://www.pinterest.com/">
-            <PinterestIcon style={{ color: "green[500]" }} fontSize="large" />
+            <PinterestIcon className="footer__iconContainer__icon" fontSize="large" />
           </a>
           <a href="https://www.twitter.com/">
-            <TwitterIcon style={{ color: "green[500]" }} fontSize="large" />
+            <TwitterIcon className="footer__iconContainer__icon" fontSize="large" />
           </a>
         </div>
         <div style={{padding: "5px"}} className="container text-center" id="copyright">

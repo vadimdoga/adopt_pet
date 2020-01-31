@@ -39,16 +39,30 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   background-color: #F4A896;
 }
 
 .footer__iconContainer a {
-  border: 3px solid #358597;
+  border: 3px solid lightgray;
   border-radius: 15px;
-  margin: 0 10%;
+  background-color: lightgray;
+  margin: 5px 3%;
 }
 
 .footer__iconContainer a:hover {
-  opacity: 0.8;
+  background-color: #101820;
+  border: 3px solid #101820;
+  -webkit-transition: background-color 0.5s;
+  transition: background-color 0.5s;
+  -webkit-transition: border 0.2s;
+  transition: border 0.2s;
+}
+
+.footer__iconContainer__icon {
+  color: #358597;
+  border-radius: 10px;
 }
 /*# sourceMappingURL=Footer.css.map */
