@@ -1,6 +1,6 @@
 $red-color: #f96167;
 $yellow-color: #fce77d;
-
+$dark-gray-color: #262223;
 .linkC {
   margin-bottom: 5px;
   padding: 0 5px;
@@ -20,7 +20,7 @@ $yellow-color: #fce77d;
 .linkC:hover .linkC__anchor {
   color: $yellow-color;
   background-color: $red-color;
-  box-shadow: 2px 2px #262223;
+  box-shadow: 2px 2px $dark-gray-color;
 
 }
 .linkC:hover .linkC__circle {

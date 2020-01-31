@@ -1,6 +1,8 @@
 $red-color: #F96167;
 $yellow-color: #FCE77D;
 $blue-gray-color: #141A47;
+$dark-gray-color: #262223;
+
 .cat {
   display: grid;
   grid-template-areas:
@@ -36,7 +38,7 @@ $blue-gray-color: #141A47;
     grid-area: quote0;
     border: 1.5px solid $red-color;
     background-color: $red-color;
-    box-shadow: 5px 5px lightgray;
+    box-shadow: 4px 3px $dark-gray-color;
     margin: auto auto;
     margin-right: 0;
     margin-top: 0;
@@ -50,7 +52,7 @@ $blue-gray-color: #141A47;
     grid-area: quote1;
     border: 1.5px solid $red-color;
     background-color: $red-color;
-    box-shadow: 5px 5px lightgray;
+    box-shadow: 4px 3px $dark-gray-color;
     margin: auto auto;
     margin-right: 0;
     margin-top: 25px;

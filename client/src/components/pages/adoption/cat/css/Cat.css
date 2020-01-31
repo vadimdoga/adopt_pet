@@ -41,8 +41,8 @@
   grid-area: quote0;
   border: 1.5px solid #F96167;
   background-color: #F96167;
-  -webkit-box-shadow: 5px 5px lightgray;
-          box-shadow: 5px 5px lightgray;
+  -webkit-box-shadow: 4px 3px #262223;
+          box-shadow: 4px 3px #262223;
   margin: auto auto;
   margin-right: 0;
   margin-top: 0;
@@ -60,8 +60,8 @@
   grid-area: quote1;
   border: 1.5px solid #F96167;
   background-color: #F96167;
-  -webkit-box-shadow: 5px 5px lightgray;
-          box-shadow: 5px 5px lightgray;
+  -webkit-box-shadow: 4px 3px #262223;
+          box-shadow: 4px 3px #262223;
   margin: auto auto;
   margin-right: 0;
   margin-top: 25px;
