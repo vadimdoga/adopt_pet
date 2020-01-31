@@ -53,6 +53,11 @@
   text-align: center;
 }
 
+.cat__quote0 h4 span {
+  color: #262223;
+  font-weight: bold;
+}
+
 .cat__quote1 {
   width: 90%;
   -ms-grid-row: 3;
@@ -70,6 +75,11 @@
 .cat__quote1 h4 {
   color: #FCE77D;
   text-align: center;
+}
+
+.cat__quote1 h4 span {
+  color: #262223;
+  font-weight: bold;
 }
 
 .cat img {

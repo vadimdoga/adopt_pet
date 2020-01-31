@@ -45,6 +45,10 @@ $dark-gray-color: #262223;
     h4{
       color: $yellow-color;
       text-align: center;
+      span{
+        color: $dark-gray-color;
+        font-weight: bold;
+      }
     }
   }
   &__quote1{
@@ -59,6 +63,10 @@ $dark-gray-color: #262223;
     h4{
       color: $yellow-color;
       text-align: center;
+      span{
+        color: $dark-gray-color;
+        font-weight: bold;
+      }
     }
   }
   img {

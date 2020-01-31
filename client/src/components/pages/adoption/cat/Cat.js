@@ -19,11 +19,11 @@ export default function Cat() {
       </div>
       <div className="cat__quote0">
         <FormatQuoteIcon fontSize="large" />
-        <h4>“Time spent with cats is never wasted.” – Sigmund Freud</h4>
+        <h4>“Time spent with cats is never wasted.” – <span>Sigmund Freud</span></h4>
       </div>
       <div className="cat__quote1">
         <FormatQuoteIcon fontSize="large" />
-        <h4>“Cats choose us; we don’t own them.” – Kristin Cast</h4>
+        <h4>“Cats choose us; we don’t own them.” – <span>Kristin Cast</span></h4>
       </div>
       <img src={catImg1} alt="cat image" />
       <div className="cat__links">
