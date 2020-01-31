@@ -1,0 +1,30 @@
+.linkC {
+  margin-bottom: 5px;
+  padding: 0 5px;
+}
+
+.linkC__circle {
+  color: #fce77d;
+}
+
+.linkC__anchor {
+  text-decoration: none !important;
+  font-weight: bold;
+  padding: 3px 3px;
+  -webkit-box-shadow: 2px 2px lightgray;
+          box-shadow: 2px 2px lightgray;
+  background-color: #fce77d;
+  color: #f96167;
+}
+
+.linkC:hover .linkC__anchor {
+  color: #fce77d;
+  background-color: #f96167;
+  -webkit-box-shadow: 2px 2px #262223;
+          box-shadow: 2px 2px #262223;
+}
+
+.linkC:hover .linkC__circle {
+  color: #f96167;
+}
+/*# sourceMappingURL=LinkC.css.map */

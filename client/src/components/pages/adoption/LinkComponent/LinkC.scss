@@ -1,0 +1,28 @@
+$red-color: #f96167;
+$yellow-color: #fce77d;
+
+.linkC {
+  margin-bottom: 5px;
+  padding: 0 5px;
+
+  &__circle {
+    color: $yellow-color;
+  }
+  &__anchor {
+    text-decoration: none !important;
+    font-weight: bold;
+    padding: 3px 3px;
+    box-shadow: 2px 2px lightgray;
+    background-color: $yellow-color;
+    color: $red-color;
+  }
+}
+.linkC:hover .linkC__anchor {
+  color: $yellow-color;
+  background-color: $red-color;
+  box-shadow: 2px 2px #262223;
+
+}
+.linkC:hover .linkC__circle {
+  color: $red-color;
+}

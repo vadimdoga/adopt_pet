@@ -1,0 +1,121 @@
+.cat {
+  display: -ms-grid;
+  display: grid;
+      grid-template-areas: "img info" "quote0 links" "quote1 links" ". links";
+  grid-gap: 15px;
+  -ms-grid-columns: 40% 60%;
+      grid-template-columns: 40% 60%;
+}
+
+.cat__info {
+  -ms-grid-row: 1;
+  -ms-grid-column: 2;
+  grid-area: info;
+  margin: auto auto;
+  margin-top: 50px;
+  width: 80%;
+  border: 1.5px solid #FCE77D;
+  -webkit-box-shadow: 3px 4px #FCE77D;
+          box-shadow: 3px 4px #FCE77D;
+}
+
+.cat__info h2 {
+  background-color: #FCE77D;
+  color: #141A47;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.cat__info p {
+  padding: 15px 15px;
+}
+
+.cat__quote0 {
+  width: 90%;
+  -ms-grid-row: 2;
+  -ms-grid-column: 1;
+  grid-area: quote0;
+  border: 1.5px solid #F96167;
+  background-color: #F96167;
+  -webkit-box-shadow: 5px 5px lightgray;
+          box-shadow: 5px 5px lightgray;
+  margin: auto auto;
+  margin-right: 0;
+  margin-top: 0;
+}
+
+.cat__quote0 h4 {
+  color: #FCE77D;
+  text-align: center;
+}
+
+.cat__quote1 {
+  width: 90%;
+  -ms-grid-row: 3;
+  -ms-grid-column: 1;
+  grid-area: quote1;
+  border: 1.5px solid #F96167;
+  background-color: #F96167;
+  -webkit-box-shadow: 5px 5px lightgray;
+          box-shadow: 5px 5px lightgray;
+  margin: auto auto;
+  margin-right: 0;
+  margin-top: 25px;
+}
+
+.cat__quote1 h4 {
+  color: #FCE77D;
+  text-align: center;
+}
+
+.cat img {
+  -ms-grid-row: 1;
+  -ms-grid-column: 1;
+  grid-area: img;
+  width: 100%;
+  -webkit-box-shadow: 5px 5px #F96167;
+          box-shadow: 5px 5px #F96167;
+  margin: 25px 20px;
+}
+
+.cat__links {
+  -ms-grid-row: 2;
+  -ms-grid-row-span: 3;
+  -ms-grid-column: 2;
+  grid-area: links;
+  margin: auto auto;
+  width: 60%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  border: 1.5px solid #FCE77D;
+  -webkit-box-shadow: 3px 4px #FCE77D;
+          box-shadow: 3px 4px #FCE77D;
+}
+
+.cat__links h3 {
+  background-color: #FCE77D;
+  color: #141A47;
+  font-weight: bold;
+  text-align: center;
+  width: 100%;
+  padding-top: 5px;
+  padding-bottom: 10px;
+  margin-bottom: 15px;
+}
+
+.cat__links hr {
+  margin-top: 0;
+  width: 100%;
+}
+/*# sourceMappingURL=Cat.css.map */

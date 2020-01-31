@@ -1,9 +1,9 @@
 import React from "react"
-import './css/Header.css'
+import "./css/Header.css"
 import pet_logo from "../../assets/pet_logo.png"
 import PersonIcon from "@material-ui/icons/Person"
-import EmailIcon from '@material-ui/icons/Email';
-import LockIcon from '@material-ui/icons/Lock';
+import EmailIcon from "@material-ui/icons/Email"
+import LockIcon from "@material-ui/icons/Lock"
 
 export default function Header() {
   const handleSubmit = () => {
@@ -32,25 +32,35 @@ export default function Header() {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarToggler">
-          <ul className="navbar-nav ml-5">
-            <li className="nav-item">
+          <ul className="navbar-nav ml-4">
+            <li className="nav-item ml-2">
               <a className="nav-link" href="/pets/find">
                 Find Pet
               </a>
             </li>
-          </ul>
-          <ul className="navbar-nav ml-4">
-            <li className="nav-item">
+            <li className="nav-item ml-2">
               <a className="nav-link" href="/blog/how-it-works">
                 How It Works?
               </a>
             </li>
-          </ul>
-          <ul className="navbar-nav ml-4">
-            <li className="nav-item">
-              <a className="nav-link" href="/blog/adoption">
-                Adoption Info
+            <li class="nav-item dropdown">
+              <a
+                style={{cursor:"pointer"}}
+                class="nav-link dropdown-toggle"
+                role="button"
+                data-toggle="dropdown"
+                aria-haspopup="true"
+                aria-expanded="false">
+                Adoption
               </a>
+              <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                <a class="dropdown-item" href="/blog/adoption/cat">
+                  Cat Adoption
+                </a>
+                <a class="dropdown-item" href="/blog/adoption/dog">
+                  Dog Adoption
+                </a>
+              </div>
             </li>
           </ul>
           <ul className="navbar-nav ml-auto">
@@ -73,50 +83,70 @@ export default function Header() {
         role="dialog"
         aria-labelledby="myModalLabel"
         aria-hidden="true">
-          <div className="modal-dialog" role="document">
-            <div className="modal-content">
-              <div className="modal-header text-center">
-                <h4 className="modal-title w-100 font-weight-bold">Sign In</h4>
-                <button type="button" className="close" data-dismiss="modal" aria-label="Close">
-                  <span aria-hidden="true">&times;</span>
-                </button>
-              </div>
-              <form onSubmit={handleSubmit} className="modal-body mx-3">
-                <div className="md-form mb-5 form-group">
-                  <label class="control-label font-weight-bold" for="email">
-                    Email:
-                  </label>
-                  <div className="input-group">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <EmailIcon />
-                      </span>
-                      </div>
-                    <input placeholder="Your email" type="email" id="email" className="form-control validate" />
-                  </div>
-                </div>
-                <div className="md-form mb-4">
-                  <label class="control-label font-weight-bold" for="email">
-                    Password:
-                  </label>
-                  <div className="input-group">
-                    <div className="input-group-prepend">
-                      <span className="input-group-text">
-                        <LockIcon />
-                      </span>
-                      </div>
-                    <input placeholder="Your password" type="password" id="password" className="form-control validate" />
-                  </div>
-                </div>
-                <div className="modal-footer">
-                  <button type="submit" className="btn btn-light">Login</button>
-                  <hr />
-                  <p>Do you have an account? <a href="/users/register"> Sign Up</a></p>
-                  <p>Forgot password? <a href="/users/recover"> Recover</a></p>
-                </div>
-              </form>
+        <div className="modal-dialog" role="document">
+          <div className="modal-content">
+            <div className="modal-header text-center">
+              <h4 className="modal-title w-100 font-weight-bold">Sign In</h4>
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close">
+                <span aria-hidden="true">&times;</span>
+              </button>
             </div>
+            <form onSubmit={handleSubmit} className="modal-body mx-3">
+              <div className="md-form mb-5 form-group">
+                <label class="control-label font-weight-bold" for="email">
+                  Email:
+                </label>
+                <div className="input-group">
+                  <div className="input-group-prepend">
+                    <span className="input-group-text">
+                      <EmailIcon />
+                    </span>
+                  </div>
+                  <input
+                    placeholder="Your email"
+                    type="email"
+                    id="email"
+                    className="form-control validate"
+                  />
+                </div>
+              </div>
+              <div className="md-form mb-4">
+                <label class="control-label font-weight-bold" for="email">
+                  Password:
+                </label>
+                <div className="input-group">
+                  <div className="input-group-prepend">
+                    <span className="input-group-text">
+                      <LockIcon />
+                    </span>
+                  </div>
+                  <input
+                    placeholder="Your password"
+                    type="password"
+                    id="password"
+                    className="form-control validate"
+                  />
+                </div>
+              </div>
+              <div className="modal-footer">
+                <button type="submit" className="btn btn-light">
+                  Login
+                </button>
+                <hr />
+                <p>
+                  Do you have an account? <a href="/users/register"> Sign Up</a>
+                </p>
+                <p>
+                  Forgot password? <a href="/users/recover"> Recover</a>
+                </p>
+              </div>
+            </form>
           </div>
+        </div>
       </div>
     </header>
   )

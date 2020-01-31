@@ -3,31 +3,31 @@ $gray-color: #f9f9f9;
 .petDetails {
   display: grid;
   grid-template-areas:
-    'container info'
-    'container facts'
-    'story story';
-    grid-gap: 15px;
-    grid-template-columns: 50% 50%;
-  &__facts{
+    "container info"
+    "container facts"
+    "story story";
+  grid-gap: 15px;
+  grid-template-columns: 50% 50%;
+  &__facts {
     grid-area: facts;
     padding: 10px 10px;
-    hr{
+    hr {
       width: 30%;
       margin-left: 0;
     }
   }
-  &__info{
+  &__info {
     grid-area: info;
     padding: 10px 10px;
-    hr{
+    hr {
       width: 20%;
       margin-left: 0;
     }
   }
-  &__story{
+  &__story {
     grid-area: story;
     padding: 10px 10px;
-    p{
+    p {
       display: flex;
     }
   }

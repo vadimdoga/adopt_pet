@@ -1,0 +1,92 @@
+$red-color: #F96167;
+$yellow-color: #FCE77D;
+$blue-gray-color: #141A47;
+.cat {
+  display: grid;
+  grid-template-areas:
+    "img info"
+    "quote0 links"
+    "quote1 links"
+    ". links";
+    grid-gap: 15px;
+  grid-template-columns: 40% 60%;
+  &__info {
+    grid-area: info;
+    margin: auto auto;
+    margin-top: 50px;
+    width: 80%;
+    border: 1.5px solid $yellow-color;
+    box-shadow: 3px 4px $yellow-color;
+    h2 {
+      background-color: $yellow-color;
+      color: $blue-gray-color;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      padding-top: 5px;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+    p{
+      padding: 15px 15px;
+    }
+  }
+  &__quote0{
+    width: 90%;
+    grid-area: quote0;
+    border: 1.5px solid $red-color;
+    background-color: $red-color;
+    box-shadow: 5px 5px lightgray;
+    margin: auto auto;
+    margin-right: 0;
+    margin-top: 0;
+    h4{
+      color: $yellow-color;
+      text-align: center;
+    }
+  }
+  &__quote1{
+    width: 90%;
+    grid-area: quote1;
+    border: 1.5px solid $red-color;
+    background-color: $red-color;
+    box-shadow: 5px 5px lightgray;
+    margin: auto auto;
+    margin-right: 0;
+    margin-top: 25px;
+    h4{
+      color: $yellow-color;
+      text-align: center;
+    }
+  }
+  img {
+    grid-area: img;
+    width: 100%;
+    box-shadow: 5px 5px $red-color;
+    margin: 25px 20px;
+  }
+  &__links {
+    grid-area: links;
+    margin: auto auto;
+    width: 60%;
+    display: flex;
+    flex-wrap: nowrap;
+    flex-direction: column;
+    border: 1.5px solid $yellow-color;
+    box-shadow: 3px 4px $yellow-color;
+    h3 {
+      background-color: $yellow-color;
+      color: $blue-gray-color;
+      font-weight: bold;
+      text-align: center;
+      width: 100%;
+      padding-top: 5px;
+      padding-bottom: 10px;
+      margin-bottom: 15px;
+    }
+    hr{
+      margin-top: 0;
+      width: 100%;
+    }
+  }
+}

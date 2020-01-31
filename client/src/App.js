@@ -7,6 +7,8 @@ import Register from './components/pages/user/register/Register'
 import Recover from './components/pages/user/recover/Recover'
 import PetDetails from './components/pages/Pet/PetDetails/PetDetails'
 import How from './components/pages/how-it-works/How'
+import Cat from './components/pages/adoption/cat/Cat'
+import Dog from './components/pages/adoption/dog/Dog'
 import {BrowserRouter as Router, Switch, Route} from 'react-router-dom'
 function App() {
   return (
@@ -23,8 +25,11 @@ function App() {
           <Route path="/blog/how-it-works">
             <How />
           </Route>
-          <Route path="/blog/adoption">
-
+          <Route path="/blog/adoption/cat">
+            <Cat />
+          </Route>
+          <Route path="/blog/adoption/dog">
+            <Dog />
           </Route>
           <Route path="/pets">
             <PetDetails />
