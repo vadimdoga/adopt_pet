@@ -1,6 +1,11 @@
 .main h2 {
   text-align: center;
-  margin: 15px 0;
+  color: white;
+  font-weight: 700;
+  background-color: #358597;
+  padding: 10px;
+  -webkit-box-shadow: inset 0px 11px 8px -10px black;
+          box-shadow: inset 0px 11px 8px -10px black;
 }
 
 .main--align {
@@ -19,11 +24,22 @@
 }
 
 .main__donate {
+  height: 60%;
+  margin-top: 45px;
+  margin-left: 50px;
+  -webkit-box-shadow: 3px 2px #262223;
+          box-shadow: 3px 2px #262223;
+  background-color: #8aaae5;
   width: 20%;
 }
 
 .main__donate h3 {
+  color: #ffffff;
+  font-weight: 700;
+  padding: 10px;
+  margin-bottom: 15px;
   text-align: center;
+  border-bottom: 2px solid #ffffff;
 }
 
 .main__donate hr {
@@ -31,7 +47,9 @@
 }
 
 .main__donate p {
-  width: 60%;
+  padding: 10px 10px;
+  color: #262223;
+  text-align: center;
   margin: auto auto;
 }
 
@@ -49,7 +67,7 @@
       -ms-flex-pack: center;
           justify-content: center;
   border-right: 2px solid #358597;
-  width: 78%;
-  margin-left: 2%;
+  width: 70%;
+  padding-right: 20px;
 }
 /*# sourceMappingURL=Main.css.map */

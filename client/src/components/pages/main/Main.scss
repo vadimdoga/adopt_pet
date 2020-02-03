@@ -1,36 +1,58 @@
 $blue-color: #358597;
+$pink-color: #f4a896;
+$red-color: #f96167;
+$yellow-color: #fce77d;
+$dark-gray-color: #262223;
+$white: #ffffff;
+$light-blue: #8aaae5;
 
-.main{
-  h2{
+.main {
+  h2 {
     text-align: center;
-    margin: 15px 0;
+    color: white;
+    font-weight: 700;
+    background-color: $blue-color;
+    padding: 10px;
+    box-shadow: inset 0px 11px 8px -10px black;
   }
-  &--align{
+  &--align {
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     justify-content: center;
   }
-  &__donate{
+  &__donate {
+    height: 60%;
+    margin-top: 45px;
+    margin-left: 50px;
+    box-shadow: 3px 2px $dark-gray-color;
+    background-color: $light-blue;
     width: 20%;
-    h3{
+    h3 {
+      color: $white;
+      font-weight: 700;
+      padding: 10px;
+      margin-bottom: 15px;
       text-align: center;
+      border-bottom: 2px solid $white;
     }
-    hr{
+    hr {
       width: 50%;
     }
-    p{
-      width: 60%;
+    p {
+      padding: 10px 10px;
+      color: $dark-gray-color;
+      text-align: center;
       margin: auto auto;
     }
   }
-  &__petGrid{
+  &__petGrid {
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     border-right: 2px solid $blue-color;
-    width: 78%;
-    margin-left: 2%;
+    width: 70%;
+    padding-right: 20px;
   }
 }

@@ -5,6 +5,8 @@ $gray-color: #f9f9f9;
 .footer{
   margin-top: 30px;
   border-top: 15px solid $pink-color;
+  box-shadow: inset 0px 10px 8px -10px black;
+
   &__textContainer{
     display: flex;
     justify-content: center;
