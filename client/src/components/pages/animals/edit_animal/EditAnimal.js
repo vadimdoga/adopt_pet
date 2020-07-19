@@ -37,7 +37,7 @@ export default function EditAnimal() {
       const animalsRes = await rq.get(`/animals/user/${user_id}`)
 
       const details = animalDetailsRes.data.details
-      const animals = animalRes.data.data
+      const animals = animalsRes.data.data
 
       setBreeds(details.breeds)
       setHairtypes(details.hair_types)
