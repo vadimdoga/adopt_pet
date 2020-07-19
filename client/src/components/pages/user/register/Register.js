@@ -4,6 +4,8 @@ import EmailIcon from "@material-ui/icons/Email"
 import PhoneIcon from "@material-ui/icons/Phone"
 import LockIcon from "@material-ui/icons/Lock"
 import HelpOutlineIcon from "@material-ui/icons/HelpOutline"
+import { useHistory } from "react-router-dom";
+import rq from '../../../../axios'
 
 export default function Register() {
   const [name, setNameValue] = useState("")
@@ -13,11 +15,33 @@ export default function Register() {
   const [questionAns, setQuestionAnsValue] = useState("")
   const [password0, setPassword0Value] = useState("")
   const [password1, setPassword1Value] = useState("")
+  const [gender, setGenderValue] = useState("")
+  const history = useHistory();
+
   const handleSubmit = e => {
     e.preventDefault()
-    if (password0 !== password1) alert("Invalid passwords!")
-    if (phone.split("")[0] !== "+") alert("Invalid phone number!")
+    if (password0 !== password1) {
+      alert("Invalid passwords!")
+    } else if (phone.split("")[0] !== "+") {
+      alert("Invalid phone number!")
+    } else {
+      const user = {
+        "username": name,
+        "email": email,
+        "phone_number": phone,
+        "question": questionAns,
+        "password": password0,
+        "gender": gender
+      }
+
+      rq.post('/users/register', user)
+        .then(res => {
+          console.log(res.data)
+          history.push('/')
+      })
+    }
   }
+
   return (
     <div>
       <form onSubmit={handleSubmit} className="mx-auto w-50 card-body">
@@ -114,6 +138,13 @@ export default function Register() {
             value={questionAns}
             onChange={e => setQuestionAnsValue(e.target.value)}
           />
+        </div>
+        <div class="form-group">
+          <select value={gender} onChange={e => setGenderValue(e.target.value)} class="form-control multiple" id="form-question">
+            <option selected>Select your gender</option>
+            <option value="M">Male</option>
+            <option value="F">Female</option>
+          </select>
         </div>
         <div class="form-group input-group" id="form-password0">
           <div class="input-group-prepend">

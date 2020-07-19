@@ -1,0 +1,63 @@
+.animal {
+  display: block;
+  &__form {
+    margin: 2% 10%;
+    display: flex;
+    flex-direction: row;
+    &__left {
+      display: flex;
+      width: 30%;
+
+      flex-direction: column;
+    }
+    &__middle {
+      width: 30%;
+      margin-left: 30px;
+      display: flex;
+      flex-direction: column;
+    }
+    &__right {
+      width: 20%;
+      margin-left: 30px;
+      display: flex;
+      flex-direction: column;
+      .form-group{
+        .input{
+          width: 100%;
+          display: flex;
+          flex-direction: row;
+          border: 1px solid gray;
+          padding: 2px;
+          input{
+            width: 75%;
+            border: none;
+          }
+          input:focus{
+            outline: none;
+          }
+          button{
+            border: none;
+            margin: 0;
+            width: 25%;
+            text-align: center;
+            padding: 2px;
+          }
+        }
+        ul{
+          li{
+            cursor: pointer;
+          }
+        }
+      }
+    }
+  }
+  button{
+    margin: 0 45%;
+    width: 130px;
+  }
+  h2{
+    padding: 15px 30px;
+    margin: 0 40%;
+    width: 250px;
+  }
+}

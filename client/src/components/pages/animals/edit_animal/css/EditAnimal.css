@@ -1,0 +1,95 @@
+.animal {
+  display: block;
+}
+
+.animal__form {
+  margin: 2% 10%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+.animal__form__left {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  width: 30%;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.animal__form__middle {
+  width: 30%;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.animal__form__right {
+  width: 20%;
+  margin-left: 30px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.animal__form__right .form-group .input {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  border: 1px solid gray;
+  padding: 2px;
+}
+
+.animal__form__right .form-group .input input {
+  width: 75%;
+  border: none;
+}
+
+.animal__form__right .form-group .input input:focus {
+  outline: none;
+}
+
+.animal__form__right .form-group .input button {
+  border: none;
+  margin: 0;
+  width: 25%;
+  text-align: center;
+  padding: 2px;
+}
+
+.animal__form__right .form-group ul li {
+  cursor: pointer;
+}
+
+.animal button {
+  margin: 0 45%;
+  width: 130px;
+}
+
+.animal h2 {
+  padding: 15px 30px;
+  margin: 0 40%;
+  width: 250px;
+}
+/*# sourceMappingURL=EditAnimal.css.map */

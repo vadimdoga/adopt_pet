@@ -1,0 +1,47 @@
+.animals__grid {
+  margin: 25px 5%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.animals__grid__buttons {
+  margin: 5px 15px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+.animals__grid__buttons a {
+  width: 100px;
+  height: 100px;
+  background-color: #358597;
+  border: 3px solid #358597;
+  border-radius: 8px;
+  margin: auto 0;
+  cursor: pointer;
+}
+
+.animals h2 {
+  text-align: center;
+  color: white;
+  font-weight: 700;
+  background-color: #358597;
+  padding: 10px;
+  -webkit-box-shadow: inset 0px 11px 8px -10px black;
+          box-shadow: inset 0px 11px 8px -10px black;
+}
+/*# sourceMappingURL=ViewAnimals.css.map */

@@ -1,13 +1,49 @@
-import React from "react"
+import React, { useState, useEffect } from "react"
 import "./css/Header.css"
 import pet_logo from "../../assets/pet_logo.png"
 import PersonIcon from "@material-ui/icons/Person"
 import EmailIcon from "@material-ui/icons/Email"
 import LockIcon from "@material-ui/icons/Lock"
+import Cookies from "universal-cookie"
+import axios from "axios"
 
 export default function Header() {
-  const handleSubmit = () => {
-    console.log("submitted")
+  const [password, setPasswordValue] = useState("")
+  const [email, setEmailValue] = useState("")
+  const [user_id, setUser_id] = useState(NaN)
+  const cookies = new Cookies()
+
+  useEffect(() => {
+    cookies.set("user_id", 2)
+    const cookie_user_id = cookies.get("user_id")
+    if (cookie_user_id != NaN) {
+      setUser_id(cookie_user_id)
+    }
+  })
+
+  const handleLogout = () => {
+    cookies.remove("user_id")
+    setUser_id(NaN)
+  }
+
+  const handleSubmit = (e) => {
+    const user = {
+      email: email,
+      password: password,
+    }
+
+    axios
+      .post("http://localhost:4000/users/login", user)
+      .then((res) => {
+        console.log(res.data.data)
+        cookies.set("user_id", parseInt(res.data.data[0].id), {
+          path: "/",
+          expires: new Date(Date.now() + 2 * 3600),
+        })
+      })
+      .catch((err) => {
+        console.log(err)
+      })
   }
   return (
     <header>
@@ -45,7 +81,7 @@ export default function Header() {
             </li>
             <li class="nav-item dropdown">
               <a
-                style={{cursor:"pointer"}}
+                style={{ cursor: "pointer" }}
                 class="nav-link dropdown-toggle"
                 role="button"
                 data-toggle="dropdown"
@@ -65,13 +101,43 @@ export default function Header() {
           </ul>
           <ul className="navbar-nav ml-auto">
             <li className="nav-item ">
-              <a
-                className="nav-link"
-                data-toggle="modal"
-                data-target="#modalLoginForm"
-                href="/">
-                <PersonIcon /> Login/SignUp
-              </a>
+              {isNaN(user_id) ? (
+                <a
+                  className="nav-link"
+                  data-toggle="modal"
+                  data-target="#modalLoginForm"
+                  href="/">
+                  <PersonIcon /> Login/SignUp
+                </a>
+              ) : null}
+            </li>
+            <li className="nav-item">
+              {isNaN(user_id) ? null : (
+                <div className="dropdown ">
+                  <button
+                    class="btn dropdown-toggle"
+                    type="button"
+                    id="dropdownLogged"
+                    data-toggle="dropdown"
+                    aria-haspopup="true"
+                    aria-expanded="false">
+                    <PersonIcon />
+                  </button>
+                  <div
+                    class="dropdown-menu dropdown-menu-right"
+                    aria-labelledby="dropdownLogged">
+                    <a class="dropdown-item" href="/animals">
+                      My Animals
+                    </a>
+                    <a class="dropdown-item" href="#">
+                      Settings
+                    </a>
+                    <a onClick={handleLogout} class="dropdown-item" href="/">
+                      Logout
+                    </a>
+                  </div>
+                </div>
+              )}
             </li>
           </ul>
         </div>
@@ -110,6 +176,8 @@ export default function Header() {
                     placeholder="Your email"
                     type="email"
                     id="email"
+                    value={email}
+                    onChange={(e) => setEmailValue(e.target.value)}
                     className="form-control validate"
                   />
                 </div>
@@ -128,6 +196,8 @@ export default function Header() {
                     placeholder="Your password"
                     type="password"
                     id="password"
+                    value={password}
+                    onChange={(e) => setPasswordValue(e.target.value)}
                     className="form-control validate"
                   />
                 </div>

@@ -1,8 +1,14 @@
-import React from 'react'
+import React, {useEffect} from 'react'
 import './css/Main.css'
 import Pet from '../Pet/PetIcon/Pet'
+import Cookies from 'universal-cookie'
 
 export default function Main() {
+  const cookies = new Cookies()
+  useEffect(() => {
+    console.log(cookies.getAll())
+  }, []);
+
   return (
     <div className="main">
       <h2>Featured Pets</h2>

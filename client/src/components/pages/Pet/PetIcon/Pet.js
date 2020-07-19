@@ -2,8 +2,8 @@ import React, { Component } from 'react'
 import "./css/Pet.css"
 
 export default class Pet extends Component {
-  constructor(){
-    super()
+  constructor(props){
+    super(props)
     this.divRef = React.createRef()
     this.imgRef = React.createRef()
     this.state = {
@@ -15,7 +15,7 @@ export default class Pet extends Component {
       //decrale dom elements
       const img = this.imgRef.current
       const div = this.divRef.current
-      
+
       if(this.state.isPetClick){
         img.style.height = "0"
         //create age element
@@ -34,24 +34,27 @@ export default class Pet extends Component {
         propsText = document.createTextNode(this.props.gender)
         gender.appendChild(propsText)
         //create goto element
+        const animal_id = this.props.id
         const goto = document.createElement("a")
-        goto.href = "/pets"
+        goto.href = `/animals/${animal_id}`
         goto.innerHTML = `<span class="pet--bold">More...</span>`
 
-        
+
         setTimeout(() => {
           div.appendChild(age)
           div.appendChild(color)
           div.appendChild(gender)
           div.appendChild(goto)
-        }, 150);
-  
+        }, 230);
+
       } else {
-        img.style.height = "90%"
-        div.children[5].remove()
-        div.children[4].remove()
-        div.children[3].remove()
-        div.children[2].remove()
+        setTimeout(() => {
+          div.children[5].remove()
+          div.children[4].remove()
+          div.children[3].remove()
+          div.children[2].remove()
+          img.style.height = "90%"
+        }, 230);
       }
       //change state value
       this.setState({
